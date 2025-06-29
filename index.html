@@ -14,40 +14,53 @@
 </head>
 <body>
 
+  <!-- This is the Header -->
   <div id="header">
     <div id="header_content">
 
-      <button class="header_button">Home</button>
-      <button class="header_button">About</button>
-      <button class="header_button">Skills</button>
-      <button class="header_button">Projects</button>
-      <button class="header_button">Get In Touch</button>
+      <button onclick="showPage('home')" class="header_button">Home</button>
+      <button onclick="showPage('about')" class="header_button">About</button>
+      <button onclick="showPage('skills')" class="header_button">Skills</button>
+      <button onclick="showPage('projects')" class="header_button">Projects</button>
+      <button onclick="showPage('get_in_touch')" class="header_button">Get In Touch</button>
 
     </div>
   </div>
 
-  <div id="my_info">
-    <div id="welcome_message">
+  <!-- This is my Home Page -->
 
-      <p id="greeting">Hi! I am</p>
-      <p id="name">Ace Jonathan D. Briones</p>
-      <p id="my_description">
-        A front-end developer with a great passion in building <br />
-        beautiful and user-friendly websites.
-      </p>
-      <button id="download_cv">Download CV</button>
+  <div id="home" class="page_active">
+    <div id="my_info">
+      <div id="welcome_message">
 
-    </div>
-  <div style="height: 350px; width: 350px;">
+        <p id="greeting">Hi! I am</p>
+        <p id="name">Ace Jonathan D. Briones</p>
+        <p id="my_description">
+          A front-end developer with a great passion in building <br />
+          beautiful and user-friendly websites.
+        </p>
+        <button id="download_cv">Download CV</button>
 
-    <img src="pictures/profile-pic.jpg"
-      alt="profile pic"
-      height="350px"
-      width="350px"
-      style="border-radius: 50%;"/>
+      </div>
+    <div style="height: 350px; width: 350px;">
 
+      <img src="pictures/profile-pic.jpg"
+        alt="profile pic"
+        height="350px"
+        width="350px"
+        style="border-radius: 50%;"/>
+
+      </div>
     </div>
   </div>
   
+  <!-- This is the About Page-->
+  <div id="about" class="page"> 
+    <div style="display: flex; align-items: center; margin-top: 150px;">
+      <p>About</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
