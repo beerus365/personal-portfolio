@@ -5,11 +5,11 @@ body {
 #header {
     position: fixed;
     top: 0;
-    width: 1110px; /* your desired fixed width */
+    width: 1110px; 
     height: 70px;
     background-color: #1B1B1B;
     padding: 10px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
     margin: 0 auto;
     left: 0;
     right: 0;
