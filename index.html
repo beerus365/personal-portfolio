@@ -14,22 +14,22 @@
 </head>
 <body>
 
-  <!-- This is the Header -->
+  <!-- This is the Header Tab -->
   <div id="header">
     <div id="header_content">
 
-      <button onclick="showPage('home')" class="header_button">Home</button>
-      <button onclick="showPage('about')" class="header_button">About</button>
-      <button onclick="showPage('skills')" class="header_button">Skills</button>
-      <button onclick="showPage('projects')" class="header_button">Projects</button>
-      <button onclick="showPage('get_in_touch')" class="header_button">Get In Touch</button>
+      <button id="homeBtn" class="header_button">Home</button>
+      <button id="aboutBtn" class="header_button">About</button>
+      <button id="skillsBtn" class="header_button">Skills</button>
+      <button id="projectsBtn" class="header_button">Projects</button>
+      <button id="contactBtn" class="header_button">Get In Touch</button>
 
     </div>
   </div>
 
   <!-- This is my Home Page -->
 
-  <div id="home" class="page_active">
+  <div id="home">
     <div id="my_info">
       <div id="welcome_message">
 
@@ -42,12 +42,12 @@
         <button id="download_cv">Download CV</button>
 
       </div>
-    <div style="height: 350px; width: 350px;">
+    <div style="height: 23em; width: 23em;">
 
       <img src="pictures/profile-pic.jpg"
         alt="profile pic"
-        height="350px"
-        width="350px"
+        height="350em"
+        width="350em"
         style="border-radius: 50%;"/>
 
       </div>
@@ -55,38 +55,33 @@
   </div>
   
   <!-- This is the About Page-->
-  <div id="about" class="page"> 
-    <div style="
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; 
-      margin-top: 150px;
-      margin-left: 160px;
-      margin-bottom: 1px;
-      ">
-      <p style="
-      font-family: 'Raleway';
-      color: white;
-      font-size: 44px;
-      margin: 0;">
-      About
-      </p>
-      <p style="
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 14px;
-      color: #9C9C9C;
-      line-height: 2;">
-        Ace Jonathan D. Briones, a Computer Science student from the University of <br> 
-        Southeastern Philippines. Specializing in front-end developing. The coding <br> 
-        journey began during college, starting with the Java programming language. <br> 
-        I started to create programs for school projects, which later began to be side <br> 
-        projects. I joined tech events during my first-year of college such as start-ups, <br> 
-        workshops, and etc., mostly about the blockchain development topics. <br> 
-        Using my foundational knowledge in developing, I want to create ideas into a <br> 
-        functional and well-designed applications that will benefit the society. <br> 
+  <div id="about"> 
+    <div id="aboutContent">
+      <p id="aboutLbl">About</p>
+      <p id="aboutMe">
+        Ace Jonathan D. Briones, a Computer Science student from the University of  
+        Southeastern Philippines. Specializing in front-end developing. The coding  
+        journey began during college, starting with the Java programming language.  
+        I started to create programs for school projects, which later began to be side  
+        projects. I joined tech events during my first-year of college such as start-ups,  
+        workshops, and etc., mostly about the blockchain development topics.  
+        Using my foundational knowledge in developing, I want to create ideas into a  
+        functional and well-designed applications that will benefit the society. 
         Every new project is a chance for me to grow and improve.
       </p>
     </div>
+    <div id="imgFrame">
+      <div id="imgLbl">
+      </div>
+      <div id="img">
+
+      </div>
+      </div>
+    </div>
+
+  <!-- This is the Skills Page -->
+  <div id="skills">
+
   </div>
 
   <script src="script.js"></script>

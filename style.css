@@ -2,26 +2,27 @@ body {
     margin: 0; 
     background-color: #2A2B2D;
 }
+
+/* Header */
 #header {
     position: fixed;
     top: 0;
-    width: 1110px; 
-    height: 70px;
+    width: 70em; 
+    height: 4.5em;
     background-color: #1B1B1B;
     padding: 10px;
     border-radius: 0 0 10px 10px;
     margin: 0 auto;
     left: 0;
     right: 0;
-    z-index: 999;
 }
 #header_content {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 5em;
 }
 .header_button {
     background: none;
@@ -34,13 +35,18 @@ body {
 .header_button:hover {
     text-decoration: underline;
 }
+
+/* Home Page */
+#home {
+    display: block;
+}
 #my_info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 150px;
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-top: 10em;
+    margin-left: 9rem;
+    margin-right: 9rem;
 }
 #welcome_message {
     width: 538px;
@@ -79,4 +85,34 @@ body {
     padding-top: 21px;
     padding-bottom: 21px;
     box-shadow: 0 0 15px #3F8E00;
+}
+
+/*About Page */
+#about {
+    display: none;
+}
+#aboutContent {
+    max-width: 90%;
+    width: 600px;
+    margin-left: 6rem;
+    margin-top: 10rem;
+    padding: 1rem;
+}
+#aboutLbl {
+    font-family: 'Raleway';
+    color: white;
+    font-size: 44px;
+    margin: 0;
+}
+#aboutMe {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #9C9C9C;
+    line-height: 2;
+    text-align: justify;
+}
+#imgFrame {
+    display: flex;
+    width: 18em;
+    height: 16.5em;
 }
