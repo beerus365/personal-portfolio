@@ -18,3 +18,5 @@ const contactBtn = document.getElementById("contactBtn");
 homeBtn.onclick = () => showSection("home");
 aboutBtn.onclick = () => showSection("about");
 skillsBtn.onclick = () => showSection("skills");
+projectsBtn.onclick = () => showSection("projects");
+contactBtn.onclick = () => showSection("contact");

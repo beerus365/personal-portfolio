@@ -49,8 +49,8 @@ body {
     margin-right: 9rem;
 }
 #welcome_message {
-    width: 538px;
-    margin-top: 50px;
+    width: 40rem;
+    margin-top: 1rem;
 }
 #greeting {
     font-family: 'Raleway';
@@ -92,17 +92,22 @@ body {
     display: none;
 }
 #aboutContent {
-    max-width: 90%;
-    width: 600px;
-    margin-left: 6rem;
-    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10rem 8rem 0 6rem;
     padding: 1rem;
+    gap: clamp(3rem, 5vw, 6rem); 
+}
+.textSection {
+    max-width: 600px;
 }
 #aboutLbl {
     font-family: 'Raleway';
     color: white;
     font-size: 44px;
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 #aboutMe {
     font-family: 'IBM Plex Mono', monospace;
@@ -111,8 +116,121 @@ body {
     line-height: 2;
     text-align: justify;
 }
+
+#imgPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0;
+    }
 #imgFrame {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 18em;
-    height: 16.5em;
+    height: 14em;
+    flex-shrink: 0;
+}
+.imgBtn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    background: none;
+    border: none; 
+    cursor: pointer;
+    color: #9C9C9C;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#imgLbl {
+    font-family: 'Raleway';
+    color: white;
+    font-size: 44px;
+    margin: 0 0 1rem 0;
+}
+.photos {
+    max-height: 14em;
+    max-width: 18em;
+}
+
+/* Skills Page */
+#skills {
+    display: none;
+}
+#s1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+#skillsLbl {
+    font-family: 'Raleway';
+    font-size: 44px;
+    color: white;
+}
+#skillsFrame {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0 10rem 4rem 10rem;
+    gap: 2rem;
+}
+.box {
+    background-color: #484848;
+    height: 14em;
+    width: 13em;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.img {
+    margin-top: 1rem;
+}
+
+/* Skills Logo */
+#html {
+    height: 6em;
+    width: 6em;
+}
+#css {
+    height: 6em;
+    width: 6em;
+}
+#javascript {
+    height: 6em;
+    width: 6em;
+}
+#java {
+    height: 6em;
+    width: 6em;
+}
+#python {
+    height: 6em;
+    width: 6em;
+}
+#solidity {
+    height: 6em;
+    width: 6em;
+}
+#figma {
+    height: 6em;
+    width: 6em;
+}
+#mysql {
+    height: 6em;
+    width: 6em;
+}
+
+.label {
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: white;
 }

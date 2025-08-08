@@ -28,7 +28,6 @@
   </div>
 
   <!-- This is my Home Page -->
-
   <div id="home">
     <div id="my_info">
       <div id="welcome_message">
@@ -42,7 +41,7 @@
         <button id="download_cv">Download CV</button>
 
       </div>
-    <div style="height: 23em; width: 23em;">
+    <div style="height: 23em; width: 22em;">
 
       <img src="pictures/profile-pic.jpg"
         alt="profile pic"
@@ -57,32 +56,90 @@
   <!-- This is the About Page-->
   <div id="about"> 
     <div id="aboutContent">
-      <p id="aboutLbl">About</p>
-      <p id="aboutMe">
-        Ace Jonathan D. Briones, a Computer Science student from the University of  
-        Southeastern Philippines. Specializing in front-end developing. The coding  
-        journey began during college, starting with the Java programming language.  
-        I started to create programs for school projects, which later began to be side  
-        projects. I joined tech events during my first-year of college such as start-ups,  
-        workshops, and etc., mostly about the blockchain development topics.  
-        Using my foundational knowledge in developing, I want to create ideas into a  
-        functional and well-designed applications that will benefit the society. 
-        Every new project is a chance for me to grow and improve.
-      </p>
-    </div>
-    <div id="imgFrame">
-      <div id="imgLbl">
-      </div>
-      <div id="img">
 
+      <!-- Text Content -->
+      <div class="textSection">
+        <h2 id="aboutLbl">About</h2>
+          <p id="aboutMe">
+            Ace Jonathan D. Briones, a Computer Science student from the University of  
+            Southeastern Philippines. Specializing in front-end developing. The coding  
+            journey began during college, starting with the Java programming language.  
+            I started to create programs for school projects, which later began to be side  
+            projects. I joined tech events during my first-year of college such as start-ups,  
+            workshops, and etc., mostly about the blockchain development topics.  
+            Using my foundational knowledge in developing, I want to create ideas into a  
+            functional and well-designed applications that will benefit the society. 
+            Every new project is a chance for me to grow and improve.
+          </p>
       </div>
-      </div>
+
+      <!-- Image Panel -->
+       <div id="imgPanel">
+        <div id="imgLbl">Davao De-Fi</div>
+
+        <div id="imgFrame">
+          <button class="imgBtn" id="prevBtn">&#60;</button> <!-- Prev Button -->
+
+          <img class="photos" src="pictures/img1.jpg">
+
+          <button class="imgBtn" id="nextBtn">&#62;</button> <!-- Next Button -->
+        </div>
+       </div>
+      
     </div>
+  </div>
 
   <!-- This is the Skills Page -->
   <div id="skills">
+    <div id="s1">
+      <h1 id="skillsLbl">Skills</h1>
+    </div>
 
+    <div id="skillsFrame">
+      <button class="box">
+        <img id="html" class="img" src="pictures/html-logo.png">
+        <h1 class="label">HTML</h1>
+      </button>
+      <button class="box">
+        <img id="css" class="img" src="pictures/css-logo.png">
+        <h1 class="label">CSS</h1>
+      </button>
+      <button class="box">
+        <img id="javascript" class="img" src="pictures/javascript-logo.png">
+        <h1 class="label">JavaScript</h1>
+      </button>
+      <button class="box">
+        <img id="java" class="img" src="pictures/java-logo.png">
+        <h1 class="label">Java</h1>
+      </button>
+      <button class="box">
+        <img id="python" class="img" src="pictures/python-logo.png">
+        <h1 class="label">Python</h1>
+      </button>
+      <button class="box">
+        <img id="solidity" class="img" src="pictures/solidity-logo.png">
+        <h1 class="label">Solidity</h1>
+      </button>
+      <button class="box">
+        <img id="figma" class="img" src="pictures/figma-logo.png">
+        <h1 class="label">Figma</h1>
+      </button>
+      <button class="box">
+        <img id="mysql" class="img" src="pictures/mysql-logo.png">
+        <h1 class="label">MySQL</h1>
+      </button>
+    </div>
   </div>
+
+  <!-- This is the Projects Page-->
+   <div id="projects">
+
+   </div>
+
+  <!-- This is the Get in Touch Page -->
+   <div id="contact">
+
+   </div> 
 
   <script src="script.js"></script>
 </body>
